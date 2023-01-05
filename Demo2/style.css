@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+*{
+    font-family: 'K2D', sans-serif;
+}
+
+.head {
+    color: rgb(255, 0, 191);
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.welcome {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+p {
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+}
+
+.love {
+    background-color: lightcoral;
+    border: solid 3px pink;
+    border-radius: 20px;
+}
+.hate {
+    background-color: black;
+    border: solid 3px rgb(102, 102, 102);
+    border-radius: 20px;
+}
+
+.lorem {
+    color: brown;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+    background-size: cover;
+    background-attachment: fixed;
+}
