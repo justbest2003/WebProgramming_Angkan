@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Angkan's portfolio</title>
 </head>
 
@@ -71,29 +74,114 @@
                             <li><span>0000 - 0000</span> </br> โรงเรียนบางแพปฐมพิทยา</li>
                             <li><span>0000 - 0000</span> </br> โรงเรียนชุมชนวัดใหญ่โพหัก</li>
                         </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Services/Projects Section -->
-            <!-- Portfolio Section -->
-            <!-- Contact Section -->
+        </div>
+    </div>
+    <!-- Services/Projects Section -->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
 
-        <script>
-            const tablinks = document.getElementsByClassName("tab-link");
-            const tabcontents = document.getElementsByClassName("tab-content");
-            const opentab = (tabname) =>{
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab")
+                <div class="services-item">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>WebDesign</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit architecto ducimus veniam
+                        placeat. Laudantium eum quaerat dolorum ipsa! At cupiditate delectus dolorem fuga error placeat
+                        obcaecati ratione, beatae excepturi quibusdam?</p>
+                    <a href="#">Learn more...</a>
+                </div>
+
+                <div class="services-item">
+                    <i class="fa-solid fa-gears"></i>
+                    <h2>WebDesign</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit architecto ducimus veniam
+                        placeat. Laudantium eum quaerat dolorum ipsa! At cupiditate delectus dolorem fuga error placeat
+                        obcaecati ratione, beatae excepturi quibusdam?</p>
+                    <a href="#">Learn more...</a>
+                </div>
+
+                <div class="services-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>WebDesign</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit architecto ducimus veniam
+                        placeat. Laudantium eum quaerat dolorum ipsa! At cupiditate delectus dolorem fuga error placeat
+                        obcaecati ratione, beatae excepturi quibusdam?</p>
+                    <a href="#">Learn more...</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="works-list">
+
+                <div class="work">
+                    <img src="images/work-1.png" alt="work-1" />
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi id dicta eum nostrum? At
+                            soluta accusamus explicabo necessitatibus earum non recusandae aliquam fugiat facilis! Fuga
+                            amet molestias ab sapiente sequi.</p>
+                        <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2" />
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi id dicta eum nostrum? At
+                            soluta accusamus explicabo necessitatibus earum non recusandae aliquam fugiat facilis! Fuga
+                            amet molestias ab sapiente sequi.</p>
+                        <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-3" />
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi id dicta eum nostrum? At
+                            soluta accusamus explicabo necessitatibus earum non recusandae aliquam fugiat facilis! Fuga
+                            amet molestias ab sapiente sequi.</p>
+                        <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <script>
+        const tablinks = document.getElementsByClassName("tab-link");
+        const tabcontents = document.getElementsByClassName("tab-content");
+        const opentab = (tabname) => {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
             }
-        </script>
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
 </body>
 
 </html>
