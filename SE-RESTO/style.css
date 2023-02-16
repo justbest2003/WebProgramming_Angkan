@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
 :root{
-    --green:#27ae60;
-    --black:#192a56;
+    --green:rgb(39, 174, 96);
+    --black:rgb(25, 42, 86);
     --light-color:#666;
     --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
 }
@@ -30,6 +30,24 @@ section{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.container:nth-child(even){
+    background: #eee;
+}
+
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+.sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+}
+
 /* Header Section */
 
 header{
@@ -153,14 +171,209 @@ header .flex .icons #menu-bars{
     color: rgb(214, 90, 90);
 }
 
+/* Home Section */
+.home .home-slider .slide{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
 
+.home .home-slider .slide .content{
+    flex: 1 1 45rem;
 
+}
 
+.home .home-slider .slide .image{
+    flex: 1 1 45rem;
+}
 
+.home .home-slider .slide .image img{
+    width: 100%;
+}
 
+.home .home-slider .slide .content span{
+    color: var(--green);
+    font-size: 2.5rem;
+}
 
+.home .home-slider .slide .content h3{
+    color: var(--black);
+    font-size: 7rem;
+}
 
+.home .home-slider .slide .content p{
+    color: var(--light-color);
+    font-size: 2.2rem;
+    padding: 0.5rem 0;
+    line-height: 1.5;
+}
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: white;
+    background: var(--black);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.8rem 3rem;
+    box-shadow: var(--box-shadow)
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+    background: var(--green);
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--green);
+}
+
+/* Dishes Section */
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.dishes .box-container .box{
+    padding: 2.5rem;
+    background: white;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye{
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--black)
+}
+
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover{
+    background: var(--green);
+    color: white;
+}
+
+.dishes .box-container .box .fa-heart{
+    right: -15rem;
+}
+
+.dishes .box-container .box .fa-eye{
+    left: -15rem;
+}
+
+.dishes .box-container .box:hover .fa-heart{
+    right: 1.5rem;
+}
+
+.dishes .box-container .box:hover .fa-eye{
+    left: 1.5rem;
+}
+
+.dishes .box-container .box img{
+    height: 17rem;
+    margin: 1rem 0;
+}
+
+.dishes .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.dishes .box-container .box .stars{
+    padding: 1rem 0;
+}
+
+.dishes .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: gold;
+}
+
+.dishes .box-container .box span{
+    color: var(--green);
+    font-weight: bolder;
+    margin-right: 1.5rem;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/* About Section */
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    color: var(--black);
+    font-size: 4rem;
+    padding: 0.5rem 0;
+}
+
+.about .row .content p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    line-height: 2;
+}
+
+.about .row .content .icons-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+}
+
+.about .row .content .icons-container .icons{
+    background: #eee;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    padding: 1.5rem 1rem;
+}
+
+.about .row .content .icons-container .icons i{
+    font-size: 2.5rem;
+    color: var(--green);
+}
+
+.about .row .content .icons-container .icons p{
+    font-size: 1.5rem;
+    color: var(--black);
+}
 
 
 
