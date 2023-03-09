@@ -1,0 +1,274 @@
+/*-----------------------------------*\
+  #main.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+:root {
+  /* Color */
+  --violet-blue-crayola: hsla(234, 50%, 64%, 1);
+  --dark-cornflower-blue_a7: hsla(214, 88%, 27%, 0.07);
+  --white: hsla(0, 0%, 100%, 1);
+  --white_a3: hsla(0, 0%, 100%, 0.03);
+  --white_a8: hsla(0, 0%, 100%, 0.08);
+  --white_a12: hsla(0, 0%, 100%, 0.12);
+  --white_a70: hsla(0, 0%, 100%, 0.7);
+  --cultured: hsla(220, 20%, 97%, 1);
+  --lavender-web: hsla(233, 52%, 94%, 1);
+  --cadet-blue-crayola: hsla(220, 12%, 70%, 1);
+  --cadet-blue-crayola_a20: hsla(222, 23%, 71%, 0.2);
+  --charcoal: hsla(218, 22%, 26%, 1);
+  --raisin-black: hsla(216, 14%, 14%, 1);
+  --light-gray: hsla(0, 0%, 79%, 1);
+  --blue-crayola: hsla(219, 72%, 56%, 1);
+  --black-coral: hsla(220, 12%, 43%, 1);
+
+  /* Typography */
+  --ff-manrope: 'Manrope', sans-serif;
+
+  --fs-1: calc(2.7rem + 1.38vw);
+  --fs-2: calc(2.6rem + .66vw);
+  --fs-3: 2.2rem;
+  --fs-4: 1.9rem;
+  --fs-5: 1.8rem;
+  --fs-6: 1.7rem;
+  --fs-7: 1.5rem;
+  --fs-8: 1.4rem;
+
+  --fw-700: 700;
+
+  /* Spacing */
+  --section-padding: 90px;
+
+  /* Box Shadow */
+  --shadow-1: 0 0 20px hsla(216, 14%, 14%, 0.05);
+  --shadow-2: 0 0 0 0.05rem hsla(214, 88%, 27%, 0.08), 0 0 1.25rem hsla(216, 14%, 14%, 0.06);
+  --shadow-3: 0 0 1.25rem hsla(216, 14%, 14%, 0.04);
+
+  /* Border Radius */
+  --radius-circle: 50%;
+  --radius-pill: 100px;
+  --radius-10: 10px;
+  --radius-8: 8px;
+  --radius-6: 6px;
+
+  /* Transiton */
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --transition-3: 0.3s ease-in-out;
+}
+
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+*,*::before,*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+a, img, span, input, button ,ion-icon{
+  display: block;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+img{
+  height: auto;
+}
+
+input, button{
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input{
+  width: 100%;
+}
+
+button{
+  cursor: pointer;
+}
+
+ion-icon{
+  pointer-events: none;
+}
+
+address{
+  font-style: normal;
+}
+
+html{
+  font-family: var(--ff-manrope);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: var(--white);
+  color: var(--black-coral);
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+
+body.nav.active{
+  overflow: hidden;
+}
+::-webkit-scrollbar{width: 10px;}
+::-webkit-scrollbar-track{background-color: hsl(0, 0%, 70%);}
+::-webkit-scrollbar-thumb{background-color: hsl(0, 0%, 80%);}
+::-webkit-scrollbar-thumb:hover{background-color: hsl(0, 0%, 70%);}
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+.container{
+  padding-inline: 16px;
+}
+
+.social-list{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-link{
+  font-size: 2rem;
+  transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus){
+  transform: translateY(-3px);
+}
+
+.setion{
+  padding-block: var(--section-padding);
+}
+.has-bg-image{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5{
+  color: var(--charcoal);
+}
+
+.h1{font-size: var(--fs-1);}
+.h2{font-size: var(--fs-2);}
+.h3{font-size: var(--fs-3);}
+.h4{font-size: var(--fs-4);}
+.h5{font-size: var(--fs-5);}
+
+.btn{
+  color: var(--white);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  border: 2px solid var(--white);
+  max-width: max-content;
+  padding: 12px 28px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition-1);
+  will-change: transform;
+}
+
+.btn:is(:hover, :focus-visible){
+  transform: translateY(-4px);
+}
+.btn-primary, .btn-outline:is(:hover, :focus-visible){
+  background-color: var(--white);
+  color: var(--charcoal);
+}
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #FEATURES
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #STATS
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #PROJECT
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #CTA
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
