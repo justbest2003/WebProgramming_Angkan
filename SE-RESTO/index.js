@@ -17,7 +17,7 @@ close_icon.onclick = () => {
     search_form.classList.remove("active")
 }
 
-//Swiper function home
+// Swiper function home
 var swiper = new Swiper(".home-slider", {
     spaceBetween:30,
     centeredSlides:true,
@@ -32,7 +32,7 @@ var swiper = new Swiper(".home-slider", {
     loop:true
 });
 
-//Swiper function review
+// Swiper function review
 var swiper = new Swiper(".review-slider", {
     spaceBetween:30,
     centeredSlides:true,
@@ -60,3 +60,12 @@ var swiper = new Swiper(".review-slider", {
         }
     }
 });
+
+// Loader Seciton
+function loader(){
+    document.querySelector(".loader-container").classList.add("fade-out")
+}
+function fadeOut(){
+    setInterval(loader, 3000)
+}
+window.onload = fadeOut;
