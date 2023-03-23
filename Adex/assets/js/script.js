@@ -69,3 +69,22 @@ const initSlider = (currentSlider) =>{
 for(let i=0, len = sliders.length; i<len; i++){
     initSlider(sliders[i]);
 }
+
+
+const accordians = document.querySelectorAll("[data-accordian]")
+let lastActiveAccordian = accordians[0];
+const initAccordian = (currentAccordian) =>{
+    const accordianBtn = currentAccordian.querySelector("[data-accordian-btn]")
+    const expandAccordian = () =>{
+        if(lastActiveAccordian && lastActiveAccordian != currentAccordian){
+            lastActiveAccordian.classList.remove("expanded");
+        }
+        currentAccordian.classList.toggle("expanded");
+        lastActiveAccordian = currentAccordian;
+    };
+    accordianBtn.addEventListener("click", expandAccordian);
+};
+
+for(let i = 0, len=accordians.length; i<len;i++){
+    initAccordian(accordians[i]);
+}
